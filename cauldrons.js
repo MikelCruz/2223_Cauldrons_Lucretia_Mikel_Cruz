@@ -1011,19 +1011,19 @@ const data = {
     }
 }
 
-// console.log("Prueba Texto Node");
+console.log("Prueba Texto Node");
 // // 1.- Mostrar la cantidad total de cauldrons
-//     console.log( "cantidad Total de Cauldrons: "
-//         +   (data.cauldrons.winter_seasson.length 
-//         +   data.cauldrons.summer_seasson.length 
-//         +   data.cauldrons.spring_seasson.length 
-//         +   data.cauldrons.autumn_seasson.length));
+    console.log( "cantidad Total de Cauldrons: "
+        +   (data.cauldrons.winter_seasson.length 
+        +   data.cauldrons.summer_seasson.length 
+        +   data.cauldrons.spring_seasson.length 
+        +   data.cauldrons.autumn_seasson.length));
 
 // // 2- Mostrar la cantidad de cauldrons separados por temporada
-//     console.log( "cantidad Total de Cauldrons de Invierno: "    + data.cauldrons.winter_seasson.length);
-//     console.log( "cantidad Total de Cauldrons de Verano: "      + data.cauldrons.summer_seasson.length);
-//     console.log( "cantidad Total de Cauldrons de Primavera: "   + data.cauldrons.spring_seasson.length);
-//     console.log( "cantidad Total de Cauldrons de otoño: "       + data.cauldrons.autumn_seasson.length);
+    console.log( "cantidad Total de Cauldrons de Invierno: "    + data.cauldrons.winter_seasson.length);
+    console.log( "cantidad Total de Cauldrons de Verano: "      + data.cauldrons.summer_seasson.length);
+    console.log( "cantidad Total de Cauldrons de Primavera: "   + data.cauldrons.spring_seasson.length);
+    console.log( "cantidad Total de Cauldrons de otoño: "       + data.cauldrons.autumn_seasson.length);
     
 
 // // 3.- Mostrar El numero de los Cauldrons rotos separados por temporada
@@ -1031,67 +1031,67 @@ let winter      = data.cauldrons.winter_seasson;
 let summer      = data.cauldrons.summer_seasson;
 let spring      = data.cauldrons.spring_seasson;
 let autum       = data.cauldrons.autumn_seasson;
-// let sumRotosWinter      = 0;
-// let sumRotosSummer      = 0;
-// let sumRotosSpring      = 0;
-// let sumRotosAutum       = 0;
+let sumRotosWinter      = 0;
+let sumRotosSummer      = 0;
+let sumRotosSpring      = 0;
+let sumRotosAutum       = 0;
 
-// //          WINTER
-// console.log("Winter Season:")
-// for (let i = 0; i < winter.length; i ++)
-// {
-//     if(winter[i].damaged === true)
-//     {
-//         // console.log(winter[i]);
-//         sumRotosWinter++;
-//     }
+//          WINTER
+console.log("Winter Season:")
+for (let i = 0; i < winter.length; i ++)
+{
+    if(winter[i].damaged === true)
+    {
+        // console.log(winter[i]);
+        sumRotosWinter++;
+    }
         
 
-// }
-// console.log(sumRotosWinter);
-// console.log("======================")
+}
+console.log(sumRotosWinter);
+console.log("======================")
 
-// //          SUMMER
-// console.log("Summer season:")
-// for (let i = 0; i < summer.length; i ++)
-// {
-//     if(summer[i].damaged === true)
-//     {
-//         // console.log(summer[i]);
-//         sumRotosSummer++;
-//     }
+//          SUMMER
+console.log("Summer season:")
+for (let i = 0; i < summer.length; i ++)
+{
+    if(summer[i].damaged === true)
+    {
+        // console.log(summer[i]);
+        sumRotosSummer++;
+    }
 
-// }
-// console.log(sumRotosSummer);
-// console.log("======================")
+}
+console.log(sumRotosSummer);
+console.log("======================")
 
-// //          SPRING
-// console.log("Spring Season:")
-// for (let i = 0; i < spring.length; i ++)
-// {
-//     if(spring[i].damaged === true)
-//     {
-//         // console.log(spring[i]);
-//         sumRotosSpring++;
-//     }
+//          SPRING
+console.log("Spring Season:")
+for (let i = 0; i < spring.length; i ++)
+{
+    if(spring[i].damaged === true)
+    {
+        // console.log(spring[i]);
+        sumRotosSpring++;
+    }
 
-// }
-// console.log(sumRotosSpring);
-// console.log("======================")
+}
+console.log(sumRotosSpring);
+console.log("======================")
 
-// //          AUTUM
-// console.log("Autum Season:")
-// for (let i = 0; i < autum.length; i ++)
-// {
-//     if(autum[i].damaged === true)
-//     {
-//         // console.log(autum[i]);
-//         sumRotosAutum++;
-//     }
+//          AUTUM
+console.log("Autum Season:")
+for (let i = 0; i < autum.length; i ++)
+{
+    if(autum[i].damaged === true)
+    {
+        // console.log(autum[i]);
+        sumRotosAutum++;
+    }
 
-// }
-// console.log(sumRotosAutum);
-// console.log("======================")
+}
+console.log(sumRotosAutum);
+console.log("======================")
 
 
 
@@ -1100,227 +1100,228 @@ let autum       = data.cauldrons.autumn_seasson;
 //Culdrons contados anteriormente 
 let totalCauldrons = (data.cauldrons.winter_seasson.length + data.cauldrons.summer_seasson.length + data.cauldrons.spring_seasson.length + data.cauldrons.autumn_seasson.length);
 
-// for (let i = 0; i < winter.length; i++)
-// {
-//     if (winter[i].magic_description === "Naproxen")
-//     {
-//             // console.log("entra en el if de winter");
-//             console.log(winter[i].color);
-//     }
-// }
+for (let i = 0; i < winter.length; i++)
+{
+    if (winter[i].magic_description === "Naproxen")
+    {
+            // console.log("entra en el if de winter");
+            console.log(winter[i].color);
+    }
+}
 
-// for (let i = 0; i < summer.length; i++)
-// {
-//     if (summer[i].magic_description === "Naproxen")
-//     {
-//             // console.log("entra en el if de winter");
-//             console.log(summer[i].color);
-//     }
-// }
+for (let i = 0; i < summer.length; i++)
+{
+    if (summer[i].magic_description === "Naproxen")
+    {
+            // console.log("entra en el if de winter");
+            console.log(summer[i].color);
+    }
+}
 
-// for (let i = 0; i < spring.length; i++)
-// {
-//     if (spring[i].magic_description === "Naproxen")
-//     {
-//             // console.log("entra en el if de winter");
-//             console.log(spring[i].color);
-//     }
-// }
+for (let i = 0; i < spring.length; i++)
+{
+    if (spring[i].magic_description === "Naproxen")
+    {
+            // console.log("entra en el if de winter");
+            console.log(spring[i].color);
+    }
+}
 
-// for (let i = 0; i < autum.length; i++)
-// {
-//     if (autum[i].magic_description === "Naproxen")
-//     {
-//             // console.log("entra en el if de winter");
-//             console.log(autum[i].color);
-//     }
-// }
+for (let i = 0; i < autum.length; i++)
+{
+    if (autum[i].magic_description === "Naproxen")
+    {
+            // console.log("entra en el if de winter");
+            console.log(autum[i].color);
+    }
+}
 
 
 
 // 5.- Mostrar el total de cauldrons de madera "wood" rotos, suma de todas las temporadas
-// let sumaTotal = 0;
-// for (let i = 0; i < winter.length; i++)
-// {
-//     if (winter[i].type === "Wood" && winter[i].damaged === true)
-//     {
-//         console.log(winter[i]);
-//         sumaTotal++;
-//     }
-// }
 
-// for (let i = 0; i < summer.length; i++)
-// {
-//     if (summer[i].type === "Wood" && summer[i].damaged === true)
-//     {
-//         console.log(summer[i]);
-//         sumaTotal++;
-//     }
-// }
+let sumaTotal = 0;
+for (let i = 0; i < winter.length; i++)
+{
+    if (winter[i].type === "Wood" && winter[i].damaged === true)
+    {
+        console.log(winter[i]);
+        sumaTotal++;
+    }
+}
 
-// for (let i = 0; i < spring.length; i++)
-// {
-//     if (spring[i].type === "Wood" && spring[i].damaged === true)
-//     {
+for (let i = 0; i < summer.length; i++)
+{
+    if (summer[i].type === "Wood" && summer[i].damaged === true)
+    {
+        console.log(summer[i]);
+        sumaTotal++;
+    }
+}
+
+for (let i = 0; i < spring.length; i++)
+{
+    if (spring[i].type === "Wood" && spring[i].damaged === true)
+    {
         
-//         console.log(spring[i]);
-//         sumaTotal++;
-//     }
-// }
+        console.log(spring[i]);
+        sumaTotal++;
+    }
+}
 
-// for (let i = 0; i < autum.length; i++)
-// {
-//     if (autum[i].type === "Wood" && autum[i].damaged === true)
-//     {
-//         console.log(autum[i]);
-//         sumaTotal++;
-//     }
-// }
+for (let i = 0; i < autum.length; i++)
+{
+    if (autum[i].type === "Wood" && autum[i].damaged === true)
+    {
+        console.log(autum[i]);
+        sumaTotal++;
+    }
+}
 
 // console.log(sumaTotal);
 
 // 6.- Mostrar la Id y magic_description de los cauldron llamados "Brassicaceae"
 
-// for (let i = 0; i < winter.length; i++)
-// {
-//     if (winter[i].name === "Brassicaceae")
-//     {
-//         console.log(winter[i].id);
-//         console.log(winter[i].magic_description);
-//     }
-// }
+for (let i = 0; i < winter.length; i++)
+{
+    if (winter[i].name === "Brassicaceae")
+    {
+        console.log(winter[i].id);
+        console.log(winter[i].magic_description);
+    }
+}
 
-// for (let i = 0; i < summer.length; i++)
-// {
-//     if (summer[i].name === "Brassicaceae")
-//     {
-//         console.log(summer[i].id);
-//         console.log(summer[i].magic_description);
-//     }
-// }
+for (let i = 0; i < summer.length; i++)
+{
+    if (summer[i].name === "Brassicaceae")
+    {
+        console.log(summer[i].id);
+        console.log(summer[i].magic_description);
+    }
+}
 
-// for (let i = 0; i < spring.length; i++)
-// {
-//     if (spring[i].name === "Brassicaceae")
-//     {
-//         console.log(spring[i].id);
-//         console.log(spring[i].magic_description);
-//     }
-// }
+for (let i = 0; i < spring.length; i++)
+{
+    if (spring[i].name === "Brassicaceae")
+    {
+        console.log(spring[i].id);
+        console.log(spring[i].magic_description);
+    }
+}
 
-// for (let i = 0; i < autum.length; i++)
-// {
-//     if (autum[i].name === "Brassicaceae")
-//     {
-//         console.log(autum[i].id);
-//         console.log(autum[i].magic_description);
-//     }
-// }
+for (let i = 0; i < autum.length; i++)
+{
+    if (autum[i].name === "Brassicaceae")
+    {
+        console.log(autum[i].id);
+        console.log(autum[i].magic_description);
+    }
+}
 
 // 7.- Mostrar el porcentaje de cauldrons dañados separados por temporada
 
-// let percentDamagedWinter    = 0;
-// let percentDamagedSummer    = 0;
-// let percentDamagedSpring    = 0;
-// let percentDamagedAutum     = 0;
+let percentDamagedWinter    = 0;
+let percentDamagedSummer    = 0;
+let percentDamagedSpring    = 0;
+let percentDamagedAutum     = 0;
 
-// for (let i = 0; i < winter.length; i++)
-// {
-//     if (winter[i].damaged === true)
-//     {
-//         percentDamagedWinter++;
-//     }
-// }
+for (let i = 0; i < winter.length; i++)
+{
+    if (winter[i].damaged === true)
+    {
+        percentDamagedWinter++;
+    }
+}
 
-// for (let i = 0; i < summer.length; i++)
-// {
-//     if (summer[i].damaged === true)
-//     {
-//         percentDamagedSummer++;
-//     }
-// }
+for (let i = 0; i < summer.length; i++)
+{
+    if (summer[i].damaged === true)
+    {
+        percentDamagedSummer++;
+    }
+}
 
-// for (let i = 0; i < spring.length; i++)
-// {
-//     if (spring[i].damaged === true)
-//     {
-//         percentDamagedSpring++;
-//     }
-// }
+for (let i = 0; i < spring.length; i++)
+{
+    if (spring[i].damaged === true)
+    {
+        percentDamagedSpring++;
+    }
+}
 
-// for (let i = 0; i < autum.length; i++)
-// {
-//     if (autum[i].damaged === true)
-//     {
-//         percentDamagedAutum++;
-//     }
-// }
+for (let i = 0; i < autum.length; i++)
+{
+    if (autum[i].damaged === true)
+    {
+        percentDamagedAutum++;
+    }
+}
 
-// percentDamagedWinter    = (percentDamagedWinter     / winter.length)    * 100;
-// percentDamagedSummer    = (percentDamagedSummer     / summer.length)    * 100;
-// percentDamagedSpring    = (percentDamagedSpring     / spring.length)    * 100;
-// percentDamagedAutum     = (percentDamagedAutum      / autum.length)     * 100;
+percentDamagedWinter    = (percentDamagedWinter     / winter.length)    * 100;
+percentDamagedSummer    = (percentDamagedSummer     / summer.length)    * 100;
+percentDamagedSpring    = (percentDamagedSpring     / spring.length)    * 100;
+percentDamagedAutum     = (percentDamagedAutum      / autum.length)     * 100;
 
-// console.log("Winter damaged Cauldrons: "    + percentDamagedWinter     + "%");
-// console.log("Summer damaged Cauldrons: "    + percentDamagedSummer     + "%");
-// console.log("Spring damaged Cauldrons: "    + percentDamagedSpring     + "%");
-// console.log("Autum damaged Cauldrons: "     + percentDamagedAutum      + "%");
+console.log("Winter damaged Cauldrons: "    + percentDamagedWinter     + "%");
+console.log("Summer damaged Cauldrons: "    + percentDamagedSummer     + "%");
+console.log("Spring damaged Cauldrons: "    + percentDamagedSpring     + "%");
+console.log("Autum damaged Cauldrons: "     + percentDamagedAutum      + "%");
 
 
 // 8.- Mostrar el porcentaje de cauldrons de "Plexiglass" en "winter_seasson"
 
-// let winterPercent  = 0 ;
+let winterPercent  = 0 ;
 
-// for(let i = 0; i < winter.length; i++)
-// {
-//     if (winter[i].type === "Plexiglass")
-//     {
-//         winterPercent++;
-//     }
-// }
+for(let i = 0; i < winter.length; i++)
+{
+    if (winter[i].type === "Plexiglass")
+    {
+        winterPercent++;
+    }
+}
 
-// winterPercent    = (winterPercent     / winter.length)    * 100;
+winterPercent    = (winterPercent     / winter.length)    * 100;
 
-// console.log("Porcentaje de Culdrons de Plexiglass en Winter Season: " + winterPercent + "%");
+console.log("Porcentaje de Culdrons de Plexiglass en Winter Season: " + winterPercent + "%");
 
 
 // 9.- Mostrar el número de cauldrons de color "Orange" en buen estado
 
-// let orangeTotal = 0;
+let orangeTotal = 0;
 
-// for (let i = 0; i < winter.length; i++)
-// {
-//     if (winter[i].color === "Orange" && winter[i].damaged === false)
-//     {
-//         orangeTotal++;
-//     }
-// }
+for (let i = 0; i < winter.length; i++)
+{
+    if (winter[i].color === "Orange" && winter[i].damaged === false)
+    {
+        orangeTotal++;
+    }
+}
 
-// for (let i = 0; i < summer.length; i++)
-// {
-//     if (summer[i].color === "Orange" && summer[i].damaged === false)
-//     {
-//         orangeTotal++;
-//     }
-// }
+for (let i = 0; i < summer.length; i++)
+{
+    if (summer[i].color === "Orange" && summer[i].damaged === false)
+    {
+        orangeTotal++;
+    }
+}
 
-// for (let i = 0; i < spring.length; i++)
-// {
-//     if (spring[i].color === "Orange" && spring[i].damaged === false)
-//     {
-//         orangeTotal++;
-//     }
-// }
+for (let i = 0; i < spring.length; i++)
+{
+    if (spring[i].color === "Orange" && spring[i].damaged === false)
+    {
+        orangeTotal++;
+    }
+}
 
-// for (let i = 0; i < autum.length; i++)
-// {
-//     if (autum[i].color === "Orange" && autum[i].damaged === false)
-//     {
-//         orangeTotal++;
-//     }
-// }
+for (let i = 0; i < autum.length; i++)
+{
+    if (autum[i].color === "Orange" && autum[i].damaged === false)
+    {
+        orangeTotal++;
+    }
+}
 
-// console.log(orangeTotal);
+console.log(orangeTotal);
 
 // 10.- Mostrar el listado de posibles colores de cauldrons, sin repetir color.
 
