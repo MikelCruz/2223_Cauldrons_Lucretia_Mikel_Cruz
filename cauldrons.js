@@ -1011,70 +1011,111 @@ const data = {
     }
 }
 
-console.log("Prueba Texto Node");
-// 1.- Mostrar la cantidad total de cauldrons
-    console.log( "cantidad Total de Cauldrons: "
-        +   (data.cauldrons.winter_seasson.length 
-        +   data.cauldrons.summer_seasson.length 
-        +   data.cauldrons.spring_seasson.length 
-        +   data.cauldrons.autumn_seasson.length));
+// console.log("Prueba Texto Node");
+// // 1.- Mostrar la cantidad total de cauldrons
+//     console.log( "cantidad Total de Cauldrons: "
+//         +   (data.cauldrons.winter_seasson.length 
+//         +   data.cauldrons.summer_seasson.length 
+//         +   data.cauldrons.spring_seasson.length 
+//         +   data.cauldrons.autumn_seasson.length));
 
-// 2- Mostrar la cantidad de cauldrons separados por temporada
-    console.log( "cantidad Total de Cauldrons de Invierno: "    + data.cauldrons.winter_seasson.length);
-    console.log( "cantidad Total de Cauldrons de Verano: "      + data.cauldrons.summer_seasson.length);
-    console.log( "cantidad Total de Cauldrons de Primavera: "   + data.cauldrons.spring_seasson.length);
-    console.log( "cantidad Total de Cauldrons de otoño: "       + data.cauldrons.autumn_seasson.length);
+// // 2- Mostrar la cantidad de cauldrons separados por temporada
+//     console.log( "cantidad Total de Cauldrons de Invierno: "    + data.cauldrons.winter_seasson.length);
+//     console.log( "cantidad Total de Cauldrons de Verano: "      + data.cauldrons.summer_seasson.length);
+//     console.log( "cantidad Total de Cauldrons de Primavera: "   + data.cauldrons.spring_seasson.length);
+//     console.log( "cantidad Total de Cauldrons de otoño: "       + data.cauldrons.autumn_seasson.length);
     
 
-// 3.- Mostrar los Cauldrons rotos separados por temporada
+// // 3.- Mostrar los Cauldrons rotos separados por temporada
 let winter  = data.cauldrons.winter_seasson;
 let summer  = data.cauldrons.summer_seasson;
 let spring  = data.cauldrons.spring_seasson;
 let autum   = data.cauldrons.autumn_seasson;
 
-//          WINTER
-console.log("Winter Season:")
-for (let i = 0; i < winter.length; i ++)
-{
-    if(winter[i].damaged === true)
-        console.log(winter[i]);
+// //          WINTER
+// console.log("Winter Season:")
+// for (let i = 0; i < winter.length; i ++)
+// {
+//     if(winter[i].damaged === true)
+//         console.log(winter[i]);
 
-}
-console.log("======================")
+// }
+// console.log("======================")
 
-//          SUMMER
-console.log("Summer season")
-for (let i = 0; i < summer.length; i ++)
-{
-    if(summer[i].damaged === true)
-        console.log(summer[i]);
+// //          SUMMER
+// console.log("Summer season")
+// for (let i = 0; i < summer.length; i ++)
+// {
+//     if(summer[i].damaged === true)
+//         console.log(summer[i]);
 
-}
-console.log("======================")
+// }
+// console.log("======================")
 
-//          SPRING
-console.log("Spring Season")
-for (let i = 0; i < spring.length; i ++)
-{
-    if(spring[i].damaged === true)
-        console.log(spring[i]);
+// //          SPRING
+// console.log("Spring Season")
+// for (let i = 0; i < spring.length; i ++)
+// {
+//     if(spring[i].damaged === true)
+//         console.log(spring[i]);
 
-}
-console.log("======================")
+// }
+// console.log("======================")
 
-//          AUTUM
-console.log("Autum Season")
-for (let i = 0; i < autum.length; i ++)
-{
-    if(autum[i].damaged === true)
-        console.log(autum[i]);
+// //          AUTUM
+// console.log("Autum Season")
+// for (let i = 0; i < autum.length; i ++)
+// {
+//     if(autum[i].damaged === true)
+//         console.log(autum[i]);
 
-}
-console.log("======================")
+// }
+// console.log("======================")
 
 
 
 // 4.- Mostrar el color de los cauldron con magic_description "Naproxen"
+
+//Culdrons contados anteriormente 
+// let totalCauldrons = (data.cauldrons.winter_seasson.length + data.cauldrons.summer_seasson.length + data.cauldrons.spring_seasson.length + data.cauldrons.autumn_seasson.length);
+
+for (let i = 0; i < winter.length; i++)
+{
+    if (winter[i].magic_description === "Naproxen")
+    {
+            // console.log("entra en el if de winter");
+            console.log(winter[i].color);
+    }
+}
+
+for (let i = 0; i < summer.length; i++)
+{
+    if (summer[i].magic_description === "Naproxen")
+    {
+            // console.log("entra en el if de winter");
+            console.log(summer[i].color);
+    }
+}
+
+for (let i = 0; i < spring.length; i++)
+{
+    if (spring[i].magic_description === "Naproxen")
+    {
+            // console.log("entra en el if de winter");
+            console.log(spring[i].color);
+    }
+}
+
+for (let i = 0; i < autum.length; i++)
+{
+    if (autum[i].magic_description === "Naproxen")
+    {
+            // console.log("entra en el if de winter");
+            console.log(autum[i].color);
+    }
+}
+
+
 
 // 5.- Mostrar el total de cauldrons de madera "wood" rotos, suma de todas las temporadas
 
