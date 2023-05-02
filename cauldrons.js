@@ -1079,45 +1079,84 @@ let autum   = data.cauldrons.autumn_seasson;
 //Culdrons contados anteriormente 
 // let totalCauldrons = (data.cauldrons.winter_seasson.length + data.cauldrons.summer_seasson.length + data.cauldrons.spring_seasson.length + data.cauldrons.autumn_seasson.length);
 
+// for (let i = 0; i < winter.length; i++)
+// {
+//     if (winter[i].magic_description === "Naproxen")
+//     {
+//             // console.log("entra en el if de winter");
+//             console.log(winter[i].color);
+//     }
+// }
+
+// for (let i = 0; i < summer.length; i++)
+// {
+//     if (summer[i].magic_description === "Naproxen")
+//     {
+//             // console.log("entra en el if de winter");
+//             console.log(summer[i].color);
+//     }
+// }
+
+// for (let i = 0; i < spring.length; i++)
+// {
+//     if (spring[i].magic_description === "Naproxen")
+//     {
+//             // console.log("entra en el if de winter");
+//             console.log(spring[i].color);
+//     }
+// }
+
+// for (let i = 0; i < autum.length; i++)
+// {
+//     if (autum[i].magic_description === "Naproxen")
+//     {
+//             // console.log("entra en el if de winter");
+//             console.log(autum[i].color);
+//     }
+// }
+
+
+
+// 5.- Mostrar el total de cauldrons de madera "wood" rotos, suma de todas las temporadas
+let sumaTotal = 0;
 for (let i = 0; i < winter.length; i++)
 {
-    if (winter[i].magic_description === "Naproxen")
+    if (winter[i].type === "Wood" && winter[i].damaged === true)
     {
-            // console.log("entra en el if de winter");
-            console.log(winter[i].color);
+        console.log(winter[i]);
+        sumaTotal++;
     }
 }
 
 for (let i = 0; i < summer.length; i++)
 {
-    if (summer[i].magic_description === "Naproxen")
+    if (summer[i].type === "Wood" && summer[i].damaged === true)
     {
-            // console.log("entra en el if de winter");
-            console.log(summer[i].color);
+        console.log(summer[i]);
+        sumaTotal++;
     }
 }
 
 for (let i = 0; i < spring.length; i++)
 {
-    if (spring[i].magic_description === "Naproxen")
+    if (spring[i].type === "Wood" && spring[i].damaged === true)
     {
-            // console.log("entra en el if de winter");
-            console.log(spring[i].color);
+        
+        console.log(spring[i]);
+        sumaTotal++;
     }
 }
 
 for (let i = 0; i < autum.length; i++)
 {
-    if (autum[i].magic_description === "Naproxen")
+    if (autum[i].type === "Wood" && autum[i].damaged === true)
     {
-            // console.log("entra en el if de winter");
-            console.log(autum[i].color);
+        console.log(autum[i]);
+        sumaTotal++;
     }
 }
 
-
-
-// 5.- Mostrar el total de cauldrons de madera "wood" rotos, suma de todas las temporadas
+console.log(sumaTotal);
 
 // 6.- Mostrar la Id y magic_description de los cauldron llamados "Brassicaceae"
 
