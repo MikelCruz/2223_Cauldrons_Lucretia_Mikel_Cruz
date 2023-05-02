@@ -1031,67 +1031,67 @@ let winter      = data.cauldrons.winter_seasson;
 let summer      = data.cauldrons.summer_seasson;
 let spring      = data.cauldrons.spring_seasson;
 let autum       = data.cauldrons.autumn_seasson;
-let sumRotosWinter      = 0;
-let sumRotosSummer      = 0;
-let sumRotosSpring      = 0;
-let sumRotosAutum       = 0;
+// let sumRotosWinter      = 0;
+// let sumRotosSummer      = 0;
+// let sumRotosSpring      = 0;
+// let sumRotosAutum       = 0;
 
-//          WINTER
-console.log("Winter Season:")
-for (let i = 0; i < winter.length; i ++)
-{
-    if(winter[i].damaged === true)
-    {
-        // console.log(winter[i]);
-        sumRotosWinter++;
-    }
+// //          WINTER
+// console.log("Winter Season:")
+// for (let i = 0; i < winter.length; i ++)
+// {
+//     if(winter[i].damaged === true)
+//     {
+//         // console.log(winter[i]);
+//         sumRotosWinter++;
+//     }
         
 
-}
-console.log(sumRotosWinter);
-console.log("======================")
+// }
+// console.log(sumRotosWinter);
+// console.log("======================")
 
-//          SUMMER
-console.log("Summer season:")
-for (let i = 0; i < summer.length; i ++)
-{
-    if(summer[i].damaged === true)
-    {
-        // console.log(summer[i]);
-        sumRotosSummer++;
-    }
+// //          SUMMER
+// console.log("Summer season:")
+// for (let i = 0; i < summer.length; i ++)
+// {
+//     if(summer[i].damaged === true)
+//     {
+//         // console.log(summer[i]);
+//         sumRotosSummer++;
+//     }
 
-}
-console.log(sumRotosSummer);
-console.log("======================")
+// }
+// console.log(sumRotosSummer);
+// console.log("======================")
 
-//          SPRING
-console.log("Spring Season:")
-for (let i = 0; i < spring.length; i ++)
-{
-    if(spring[i].damaged === true)
-    {
-        // console.log(spring[i]);
-        sumRotosSpring++;
-    }
+// //          SPRING
+// console.log("Spring Season:")
+// for (let i = 0; i < spring.length; i ++)
+// {
+//     if(spring[i].damaged === true)
+//     {
+//         // console.log(spring[i]);
+//         sumRotosSpring++;
+//     }
 
-}
-console.log(sumRotosSpring);
-console.log("======================")
+// }
+// console.log(sumRotosSpring);
+// console.log("======================")
 
-//          AUTUM
-console.log("Autum Season:")
-for (let i = 0; i < autum.length; i ++)
-{
-    if(autum[i].damaged === true)
-    {
-        // console.log(autum[i]);
-        sumRotosAutum++;
-    }
+// //          AUTUM
+// console.log("Autum Season:")
+// for (let i = 0; i < autum.length; i ++)
+// {
+//     if(autum[i].damaged === true)
+//     {
+//         // console.log(autum[i]);
+//         sumRotosAutum++;
+//     }
 
-}
-console.log(sumRotosAutum);
-console.log("======================")
+// }
+// console.log(sumRotosAutum);
+// console.log("======================")
 
 
 
@@ -1218,6 +1218,54 @@ console.log("======================")
 // }
 
 // 7.- Mostrar el porcentaje de cauldrons dañados separados por temporada
+
+let percentDamagedWinter    = 0;
+let percentDamagedSummer    = 0;
+let percentDamagedSpring    = 0;
+let percentDamagedAutum     = 0;
+
+for (let i = 0; i < winter.length; i++)
+{
+    if (winter[i].damaged === true)
+    {
+        percentDamagedWinter++;
+    }
+}
+
+for (let i = 0; i < summer.length; i++)
+{
+    if (summer[i].damaged === true)
+    {
+        percentDamagedSummer++;
+    }
+}
+
+for (let i = 0; i < spring.length; i++)
+{
+    if (spring[i].damaged === true)
+    {
+        percentDamagedSpring++;
+    }
+}
+
+for (let i = 0; i < autum.length; i++)
+{
+    if (autum[i].damaged === true)
+    {
+        percentDamagedAutum++;
+    }
+}
+
+percentDamagedWinter    = (percentDamagedWinter     / winter.length)    * 100;
+percentDamagedSummer    = (percentDamagedSummer     / summer.length)    * 100;
+percentDamagedSpring    = (percentDamagedSpring     / spring.length)    * 100;
+percentDamagedAutum     = (percentDamagedAutum      / autum.length)     * 100;
+
+console.log("Winter damaged Cauldrons: "    + percentDamagedWinter     + "%");
+console.log("Summer damaged Cauldrons: "    + percentDamagedSummer     + "%");
+console.log("Spring damaged Cauldrons: "    + percentDamagedSpring     + "%");
+console.log("Autum damaged Cauldrons: "     + percentDamagedAutum      + "%");
+
 
 // 8.- Mostrar el porcentaje de cauldrons de "Plexiglass" en "winter_seasson"
 
