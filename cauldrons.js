@@ -1013,7 +1013,11 @@ const data = {
 
 console.log("Prueba Texto Node");
 // 1.- Mostrar la cantidad total de cauldrons
-
+    console.log( "cantidad Total de Cauldrons: "
+        +   data.cauldrons.winter_seasson.length 
+        +   data.cauldrons.summer_seasson.length 
+        +   data.cauldrons.spring_seasson.length 
+        +   data.cauldrons.autumn_seasson.length);
 
 // 2- Mostrar la cantidad de cauldrons separados por temporada
 
