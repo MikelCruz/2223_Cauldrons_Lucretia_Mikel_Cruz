@@ -1098,7 +1098,7 @@ let autum       = data.cauldrons.autumn_seasson;
 // 4.- Mostrar el color de los cauldron con magic_description "Naproxen"
 
 //Culdrons contados anteriormente 
-// let totalCauldrons = (data.cauldrons.winter_seasson.length + data.cauldrons.summer_seasson.length + data.cauldrons.spring_seasson.length + data.cauldrons.autumn_seasson.length);
+let totalCauldrons = (data.cauldrons.winter_seasson.length + data.cauldrons.summer_seasson.length + data.cauldrons.spring_seasson.length + data.cauldrons.autumn_seasson.length);
 
 // for (let i = 0; i < winter.length; i++)
 // {
@@ -1323,4 +1323,76 @@ let autum       = data.cauldrons.autumn_seasson;
 // console.log(orangeTotal);
 
 // 10.- Mostrar el listado de posibles colores de cauldrons, sin repetir color.
+
+let colors = []
+
+for(let h = 0; h < winter.length; h++)
+{
+    // Eliminacion de Colores repetidos
+    colors.push(winter[h].color);
+    for (let i = 0; i < colors.length; i++)
+    {
+        for (let j = i+1; j < colors.length; j++)
+        {
+            if (colors[i] === colors[j])
+            {
+                colors.splice(j, 1);
+            }
+        }
+    }
+}
+
+for(let h = 0; h < summer.length; h++)
+{
+    // Eliminacion de Colores repetidos
+    colors.push(summer[h].color);
+    for (let i = 0; i < colors.length; i++)
+    {
+        for (let j = i+1; j < colors.length; j++)
+        {
+            if (colors[i] === colors[j])
+            {
+                colors.splice(j, 1);
+            }
+        }
+    }
+}
+
+for(let h = 0; h < spring.length; h++)
+{
+    // Eliminacion de Colores repetidos
+    colors.push(spring[h].color);
+    for (let i = 0; i < colors.length; i++)
+    {
+        for (let j = i+1; j < colors.length; j++)
+        {
+            if (colors[i] === colors[j])
+            {
+                colors.splice(j, 1);
+            }
+        }
+    }
+}
+
+for(let h = 0; h < autum.length; h++)
+{
+    // Eliminacion de Colores repetidos
+    colors.push(autum[h].color);
+    for (let i = 0; i < colors.length; i++)
+    {
+        for (let j = i+1; j < colors.length; j++)
+        {
+            if (colors[i] === colors[j])
+            {
+                colors.splice(j, 1);
+            }
+        }
+    }
+}
+
+
+
+
+console.log(colors);
+
 
