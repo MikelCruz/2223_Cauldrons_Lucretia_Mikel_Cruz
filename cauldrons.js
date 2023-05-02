@@ -1011,8 +1011,9 @@ const data = {
     }
 }
 
-
+console.log("Prueba Texto Node");
 // 1.- Mostrar la cantidad total de cauldrons
+
 
 // 2- Mostrar la cantidad de cauldrons separados por temporada
 
