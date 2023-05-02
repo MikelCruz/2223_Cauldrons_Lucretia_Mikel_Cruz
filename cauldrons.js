@@ -1014,10 +1014,10 @@ const data = {
 console.log("Prueba Texto Node");
 // 1.- Mostrar la cantidad total de cauldrons
     console.log( "cantidad Total de Cauldrons: "
-        +   data.cauldrons.winter_seasson.length 
+        +   (data.cauldrons.winter_seasson.length 
         +   data.cauldrons.summer_seasson.length 
         +   data.cauldrons.spring_seasson.length 
-        +   data.cauldrons.autumn_seasson.length);
+        +   data.cauldrons.autumn_seasson.length));
 
 // 2- Mostrar la cantidad de cauldrons separados por temporada
     console.log( "cantidad Total de Cauldrons de Invierno: "    + data.cauldrons.winter_seasson.length);
@@ -1027,6 +1027,7 @@ console.log("Prueba Texto Node");
     
 
 // 3.- Mostrar los Cauldrons rotos separados por temporada
+    console.log()
 
 // 4.- Mostrar el color de los cauldron con magic_description "Naproxen"
 
