@@ -1269,6 +1269,19 @@ let autum       = data.cauldrons.autumn_seasson;
 
 // 8.- Mostrar el porcentaje de cauldrons de "Plexiglass" en "winter_seasson"
 
+let winterPercent  = 0 ;
+
+for(let i = 0; i < winter.length; i++)
+{
+    if (winter[i].type === "Plexiglass")
+    {
+        winterPercent++;
+    }
+}
+
+winterPercent    = (winterPercent     / winter.length)    * 100;
+
+console.log("Porcentaje de Culdrons de Plexiglass en Winter Season: " + winterPercent + "%");
 
 
 // 9.- Mostrar el número de cauldrons de color "Orange" en buen estado
