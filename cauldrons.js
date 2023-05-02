@@ -1160,47 +1160,83 @@ let autum   = data.cauldrons.autumn_seasson;
 
 // 6.- Mostrar la Id y magic_description de los cauldron llamados "Brassicaceae"
 
-for (let i = 0; i < winter.length; i++)
-{
-    if (winter[i].name === "Brassicaceae")
-    {
-        console.log(winter[i].id);
-        console.log(winter[i].magic_description);
-    }
-}
+// for (let i = 0; i < winter.length; i++)
+// {
+//     if (winter[i].name === "Brassicaceae")
+//     {
+//         console.log(winter[i].id);
+//         console.log(winter[i].magic_description);
+//     }
+// }
 
-for (let i = 0; i < summer.length; i++)
-{
-    if (summer[i].name === "Brassicaceae")
-    {
-        console.log(summer[i].id);
-        console.log(summer[i].magic_description);
-    }
-}
+// for (let i = 0; i < summer.length; i++)
+// {
+//     if (summer[i].name === "Brassicaceae")
+//     {
+//         console.log(summer[i].id);
+//         console.log(summer[i].magic_description);
+//     }
+// }
 
-for (let i = 0; i < spring.length; i++)
-{
-    if (spring[i].name === "Brassicaceae")
-    {
-        console.log(spring[i].id);
-        console.log(spring[i].magic_description);
-    }
-}
+// for (let i = 0; i < spring.length; i++)
+// {
+//     if (spring[i].name === "Brassicaceae")
+//     {
+//         console.log(spring[i].id);
+//         console.log(spring[i].magic_description);
+//     }
+// }
 
-for (let i = 0; i < autum.length; i++)
-{
-    if (autum[i].name === "Brassicaceae")
-    {
-        console.log(autum[i].id);
-        console.log(autum[i].magic_description);
-    }
-}
+// for (let i = 0; i < autum.length; i++)
+// {
+//     if (autum[i].name === "Brassicaceae")
+//     {
+//         console.log(autum[i].id);
+//         console.log(autum[i].magic_description);
+//     }
+// }
 
 // 7.- Mostrar el porcentaje de cauldrons dañados separados por temporada
 
 // 8.- Mostrar el porcentaje de cauldrons de "Plexiglass" en "winter_seasson"
 
 // 9.- Mostrar el número de cauldrons de color "Orange" en buen estado
+
+let orangeTotal = 0;
+
+for (let i = 0; i < winter.length; i++)
+{
+    if (winter[i].color === "Orange" && winter[i].damaged === false)
+    {
+        orangeTotal++;
+    }
+}
+
+for (let i = 0; i < summer.length; i++)
+{
+    if (summer[i].color === "Orange" && summer[i].damaged === false)
+    {
+        orangeTotal++;
+    }
+}
+
+for (let i = 0; i < spring.length; i++)
+{
+    if (spring[i].color === "Orange" && spring[i].damaged === false)
+    {
+        orangeTotal++;
+    }
+}
+
+for (let i = 0; i < autum.length; i++)
+{
+    if (autum[i].color === "Orange" && autum[i].damaged === false)
+    {
+        orangeTotal++;
+    }
+}
+
+console.log(orangeTotal);
 
 // 10.- Mostrar el listado de posibles colores de cauldrons, sin repetir color.
 
