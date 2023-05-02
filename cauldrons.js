@@ -1118,47 +1118,83 @@ let autum   = data.cauldrons.autumn_seasson;
 
 
 // 5.- Mostrar el total de cauldrons de madera "wood" rotos, suma de todas las temporadas
-let sumaTotal = 0;
+// let sumaTotal = 0;
+// for (let i = 0; i < winter.length; i++)
+// {
+//     if (winter[i].type === "Wood" && winter[i].damaged === true)
+//     {
+//         console.log(winter[i]);
+//         sumaTotal++;
+//     }
+// }
+
+// for (let i = 0; i < summer.length; i++)
+// {
+//     if (summer[i].type === "Wood" && summer[i].damaged === true)
+//     {
+//         console.log(summer[i]);
+//         sumaTotal++;
+//     }
+// }
+
+// for (let i = 0; i < spring.length; i++)
+// {
+//     if (spring[i].type === "Wood" && spring[i].damaged === true)
+//     {
+        
+//         console.log(spring[i]);
+//         sumaTotal++;
+//     }
+// }
+
+// for (let i = 0; i < autum.length; i++)
+// {
+//     if (autum[i].type === "Wood" && autum[i].damaged === true)
+//     {
+//         console.log(autum[i]);
+//         sumaTotal++;
+//     }
+// }
+
+// console.log(sumaTotal);
+
+// 6.- Mostrar la Id y magic_description de los cauldron llamados "Brassicaceae"
+
 for (let i = 0; i < winter.length; i++)
 {
-    if (winter[i].type === "Wood" && winter[i].damaged === true)
+    if (winter[i].name === "Brassicaceae")
     {
-        console.log(winter[i]);
-        sumaTotal++;
+        console.log(winter[i].id);
+        console.log(winter[i].magic_description);
     }
 }
 
 for (let i = 0; i < summer.length; i++)
 {
-    if (summer[i].type === "Wood" && summer[i].damaged === true)
+    if (summer[i].name === "Brassicaceae")
     {
-        console.log(summer[i]);
-        sumaTotal++;
+        console.log(summer[i].id);
+        console.log(summer[i].magic_description);
     }
 }
 
 for (let i = 0; i < spring.length; i++)
 {
-    if (spring[i].type === "Wood" && spring[i].damaged === true)
+    if (spring[i].name === "Brassicaceae")
     {
-        
-        console.log(spring[i]);
-        sumaTotal++;
+        console.log(spring[i].id);
+        console.log(spring[i].magic_description);
     }
 }
 
 for (let i = 0; i < autum.length; i++)
 {
-    if (autum[i].type === "Wood" && autum[i].damaged === true)
+    if (autum[i].name === "Brassicaceae")
     {
-        console.log(autum[i]);
-        sumaTotal++;
+        console.log(autum[i].id);
+        console.log(autum[i].magic_description);
     }
 }
-
-console.log(sumaTotal);
-
-// 6.- Mostrar la Id y magic_description de los cauldron llamados "Brassicaceae"
 
 // 7.- Mostrar el porcentaje de cauldrons dañados separados por temporada
 
