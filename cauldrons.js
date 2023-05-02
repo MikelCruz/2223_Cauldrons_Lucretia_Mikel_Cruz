@@ -1027,7 +1027,40 @@ console.log("Prueba Texto Node");
     
 
 // 3.- Mostrar los Cauldrons rotos separados por temporada
-    console.log()
+let winter  = data.cauldrons.winter_seasson;
+let summer  = data.cauldrons.summer_seasson;
+let spring  = data.cauldrons.spring_seasson;
+let autum   = data.cauldrons.autumn_seasson;
+
+for (let i = 0; i < winter.length; i ++)
+{
+    if(winter[i].damaged === true)
+        console.log(winter[i]);
+
+}
+
+for (let i = 0; i < summer.length; i ++)
+{
+    if(summer[i].damaged === true)
+        console.log(summer[i]);
+
+}
+
+for (let i = 0; i < spring.length; i ++)
+{
+    if(spring[i].damaged === true)
+        console.log(spring[i]);
+
+}
+
+for (let i = 0; i < autum.length; i ++)
+{
+    if(autum[i].damaged === true)
+        console.log(autum[i]);
+
+}
+
+
 
 // 4.- Mostrar el color de los cauldron con magic_description "Naproxen"
 
