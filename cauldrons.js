@@ -1026,51 +1026,72 @@ const data = {
 //     console.log( "cantidad Total de Cauldrons de otoño: "       + data.cauldrons.autumn_seasson.length);
     
 
-// // 3.- Mostrar los Cauldrons rotos separados por temporada
-let winter  = data.cauldrons.winter_seasson;
-let summer  = data.cauldrons.summer_seasson;
-let spring  = data.cauldrons.spring_seasson;
-let autum   = data.cauldrons.autumn_seasson;
+// // 3.- Mostrar El numero de los Cauldrons rotos separados por temporada
+let winter      = data.cauldrons.winter_seasson;
+let summer      = data.cauldrons.summer_seasson;
+let spring      = data.cauldrons.spring_seasson;
+let autum       = data.cauldrons.autumn_seasson;
+let sumRotosWinter      = 0;
+let sumRotosSummer      = 0;
+let sumRotosSpring      = 0;
+let sumRotosAutum       = 0;
 
-// //          WINTER
-// console.log("Winter Season:")
-// for (let i = 0; i < winter.length; i ++)
-// {
-//     if(winter[i].damaged === true)
-//         console.log(winter[i]);
+//          WINTER
+console.log("Winter Season:")
+for (let i = 0; i < winter.length; i ++)
+{
+    if(winter[i].damaged === true)
+    {
+        // console.log(winter[i]);
+        sumRotosWinter++;
+    }
+        
 
-// }
-// console.log("======================")
+}
+console.log(sumRotosWinter);
+console.log("======================")
 
-// //          SUMMER
-// console.log("Summer season")
-// for (let i = 0; i < summer.length; i ++)
-// {
-//     if(summer[i].damaged === true)
-//         console.log(summer[i]);
+//          SUMMER
+console.log("Summer season:")
+for (let i = 0; i < summer.length; i ++)
+{
+    if(summer[i].damaged === true)
+    {
+        // console.log(summer[i]);
+        sumRotosSummer++;
+    }
 
-// }
-// console.log("======================")
+}
+console.log(sumRotosSummer);
+console.log("======================")
 
-// //          SPRING
-// console.log("Spring Season")
-// for (let i = 0; i < spring.length; i ++)
-// {
-//     if(spring[i].damaged === true)
-//         console.log(spring[i]);
+//          SPRING
+console.log("Spring Season:")
+for (let i = 0; i < spring.length; i ++)
+{
+    if(spring[i].damaged === true)
+    {
+        // console.log(spring[i]);
+        sumRotosSpring++;
+    }
 
-// }
-// console.log("======================")
+}
+console.log(sumRotosSpring);
+console.log("======================")
 
-// //          AUTUM
-// console.log("Autum Season")
-// for (let i = 0; i < autum.length; i ++)
-// {
-//     if(autum[i].damaged === true)
-//         console.log(autum[i]);
+//          AUTUM
+console.log("Autum Season:")
+for (let i = 0; i < autum.length; i ++)
+{
+    if(autum[i].damaged === true)
+    {
+        // console.log(autum[i]);
+        sumRotosAutum++;
+    }
 
-// }
-// console.log("======================")
+}
+console.log(sumRotosAutum);
+console.log("======================")
 
 
 
