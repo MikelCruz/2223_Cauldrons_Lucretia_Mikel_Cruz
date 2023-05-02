@@ -1032,33 +1032,45 @@ let summer  = data.cauldrons.summer_seasson;
 let spring  = data.cauldrons.spring_seasson;
 let autum   = data.cauldrons.autumn_seasson;
 
+//          WINTER
+console.log("Winter Season:")
 for (let i = 0; i < winter.length; i ++)
 {
     if(winter[i].damaged === true)
         console.log(winter[i]);
 
 }
+console.log("======================")
 
+//          SUMMER
+console.log("Summer season")
 for (let i = 0; i < summer.length; i ++)
 {
     if(summer[i].damaged === true)
         console.log(summer[i]);
 
 }
+console.log("======================")
 
+//          SPRING
+console.log("Spring Season")
 for (let i = 0; i < spring.length; i ++)
 {
     if(spring[i].damaged === true)
         console.log(spring[i]);
 
 }
+console.log("======================")
 
+//          AUTUM
+console.log("Autum Season")
 for (let i = 0; i < autum.length; i ++)
 {
     if(autum[i].damaged === true)
         console.log(autum[i]);
 
 }
+console.log("======================")
 
 
 
