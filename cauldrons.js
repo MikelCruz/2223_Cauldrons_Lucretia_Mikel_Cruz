@@ -1020,6 +1020,11 @@ console.log("Prueba Texto Node");
         +   data.cauldrons.autumn_seasson.length);
 
 // 2- Mostrar la cantidad de cauldrons separados por temporada
+    console.log( "cantidad Total de Cauldrons de Invierno: "    + data.cauldrons.winter_seasson.length);
+    console.log( "cantidad Total de Cauldrons de Verano: "      + data.cauldrons.summer_seasson.length);
+    console.log( "cantidad Total de Cauldrons de Primavera: "   + data.cauldrons.spring_seasson.length);
+    console.log( "cantidad Total de Cauldrons de otoño: "       + data.cauldrons.autumn_seasson.length);
+    
 
 // 3.- Mostrar los Cauldrons rotos separados por temporada
 
